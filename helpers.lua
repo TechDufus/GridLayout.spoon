@@ -53,6 +53,10 @@ function M.normalizeElementForApply(app_id, window, cell, layout, state)
     nil,
     nil,
     M.grid.getCellWithMargins(layout.cells[cell][state.current_layout_variant]),
+    options = {
+      absolute_x = true,
+      absolute_y = true,
+    },
   }
 end
 
